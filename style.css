@@ -1,1 +1,43 @@
+body {
+    background-image: url("rio.jpg");
+    background-size: 100%;
+}
 
+.fada {
+    width: 10%;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    animation: voar 10s;
+    animation-timing-function: cubic-bezier(0.68, -0.6, 0.32, 1.6);
+    animation-delay: 2s;
+    animation-iteration-count: 4;
+    animation-direction: alternate;
+}
+
+.fada:hover{
+    animation-play-state: paused;
+    visibility: hidden;
+}
+
+@keyframes voar {
+    from {
+        transform: translate(0,0);
+        filter: brightness(100%);
+    }
+
+    30% {
+        transform: translate(200%, -250px);
+        filter: brightness(200%);
+    }
+
+    50%{
+        transform: translate(200%, -300px);
+    }
+
+    to {
+        transform: translate(80vw, 0);
+        filter: brightness(200%);
+        
+    }
+}
