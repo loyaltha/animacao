@@ -32,7 +32,7 @@ body {
     }
 
     50%{
-        transform: translate(200%, -300px);
+        transform: translate(250%, -300px);
     }
 
     to {
